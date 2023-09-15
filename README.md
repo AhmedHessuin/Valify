@@ -84,3 +84,17 @@ Dataset
     |
     ----29 folder each folder is an arabic letter, each folder contain 96 image
 ```
+### Dataset location
+you can find the dataset in [link](Dataset/Link.txt)
+
+## Train
+train 
+* **LR** : Start with 1e-3 then end with 0.5*1e-3 through the training 
+* **Epochs** : 9 epochs
+* **Loss** : NLLLoss  The negative log likelihood loss, Calculated as −log(y), where y is a prediction corresponding to the true label, after the Softmax Activation
+* **Log** : logs can be found in [tensorboard](runs/Sep13_22-44-54_res12-Precision-T7600/events.out.tfevents.1694637894.res12-Precision-T7600.1899822.0)
+you can run 
+```bash
+tensorboard --logdir=runs
+```
+you can see the [screenshots](Images) 
