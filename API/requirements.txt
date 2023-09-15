@@ -1,0 +1,7 @@
+fastapi==0.103.1
+numpy==1.23.5
+opencv_python==4.5.5.64
+Pillow==9.4.0
+Requests==2.31.0
+torch==1.13.1
+uvicorn==0.11.8
