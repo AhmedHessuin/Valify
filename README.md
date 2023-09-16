@@ -45,7 +45,7 @@ Params size (MB): 0.43
 Estimated Total Size (MB): 0.47
 ```
 
-### MACs 
+### MACs and FLOPs
 you can compute FLOPs (Floating Point Operations) From MACs as one MACs equals roughly two FLOPs
 ```
 MyNetwork(
@@ -149,7 +149,7 @@ python get_metrics.py
 |ي|0.9139784946236559|0.8854166666666666|0.8994708994708994|
 
 ## Inference
-the inference can be found in [inference.py](inference.py) 
+the inference can be found in [inference.py](inference.py), expect dir contain images
 run inference with 
 ```bash
 python inference.py <dir-contain-images>
