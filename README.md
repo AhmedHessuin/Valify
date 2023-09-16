@@ -10,6 +10,7 @@
 6. [Inference](#inference)
 7. [Docker Setup](#docker-setup)
 8. [Test API](#test-api)
+9. [What Is Next](#what-is-next)
 
 ## Install for Train Enviroments
 to install you need to create Virtual Environment with conda, activate it  then install requirments
@@ -107,6 +108,7 @@ python train.py
 ## Metric
 the metric is **Precision**, **Recall**, and **F1 Score**
 you can generate it from the [get_metrics.py](get_metrics.py)
+you can open [Metrics.json](Metrics.json)
 ```bash
 python get_metrics.py
 ```
@@ -122,9 +124,25 @@ python inference.py <dir-contain-images>
 this will print the predicted label 
 
 ## Docker Setup
-you can setup the docker from zero from (Dockerfile)[API/Dockerfile]
+you can setup the docker from zero from [Dockerfile](API/Dockerfile)
 run command 
 ```bash
 sudo docker build -t app .
 ```
-or load it 
+or load it after downloading the [app.tar](API/app.tar_link.txt)
+```bash
+sudo docker load < app.tar
+```
+run a container with 
+```bash
+sudo docker run -d --name mycontainer2 -p 80:80 app
+```
+
+## Test API
+you can test the API with [test_api.py](API/app/test_api.py)
+or see the [screenshot](Images/test_API.PNG)
+
+## What Is Next
+* i can Train bigger model or change the input size for better results
+* i can add more augmentations
+* i can use Pretrained network and adapt on this data
